@@ -11,6 +11,47 @@
 
 不要把 API Key 写入报告、HTML、JSON、Git 提交、截图或聊天消息。
 
+## API Key 获取指南
+
+大加拉/极致了的 API Key 通常需要在官网账号后台获取。公开入口：
+
+- 官网：`https://www.dajiala.com/`
+- 登录入口：`https://www.dajiala.com/main/login`
+
+建议流程：
+
+1. 打开官网并登录账号。
+2. 在后台查找和 API 相关的入口，常见名称可能是“API 接口”“开放接口”“接口服务”“开发者接口”“我的接口”“接口密钥”。
+3. 如果后台展示了接口套餐或余额，确认账号已开通需要的接口能力，例如公众号关键词搜索、视频号关键词搜索、视频号详情/下载等。
+4. 创建或复制 API Key。
+5. 如果后台要求设置 `verifycode`，同时记录该值；如果没有设置，脚本会默认传空字符串。
+6. 将 Key 配置到本地环境变量，不要写进代码或仓库：
+
+```bash
+export DAJIALA_API_KEY="你的大加拉 API Key"
+export DAJIALA_VERIFYCODE="你的 verifycode，可选"
+```
+
+Windows PowerShell 临时配置：
+
+```powershell
+$env:DAJIALA_API_KEY="你的大加拉 API Key"
+$env:DAJIALA_VERIFYCODE="你的 verifycode，可选"
+```
+
+Windows 用户级长期配置：
+
+```powershell
+[Environment]::SetEnvironmentVariable("DAJIALA_API_KEY", "你的大加拉 API Key", "User")
+[Environment]::SetEnvironmentVariable("DAJIALA_VERIFYCODE", "你的 verifycode，可选", "User")
+```
+
+如果后台找不到 API Key：
+
+- 检查账号是否购买或开通 API 服务。
+- 联系大加拉/极致了客服或商务，说明需要公众号文章搜索、视频号搜索、视频号详情/下载接口。
+- 先用小范围参数测试，避免一次性消耗过多余额。
+
 ## 微信公众号文章
 
 接口：
