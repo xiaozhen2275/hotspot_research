@@ -1,6 +1,6 @@
 interface:
-  display_name: "视频热点研究"
-  short_description: "大加拉公众号和视频号热点报告"
+  display_name: "视频号热点抓取"
+  short_description: "公众号和视频号热点抓取报告"
   default_prompt: "使用 $video-hotspot-research 抓取指定主题的微信公众号文章和视频号内容，并生成热点报告。"
 policy:
   allow_implicit_invocation: true

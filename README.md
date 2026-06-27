@@ -1,6 +1,8 @@
-# video-hotspot-research
+# 视频号热点抓取
 
 基于大加拉/极致了 API 抓取微信公众号文章和微信视频号内容，并生成 Markdown、HTML、JSON 热点报告。
+
+> 技术调用名仍为 `$video-hotspot-research`，用于 Codex 中触发本 skill。
 
 适合：
 
