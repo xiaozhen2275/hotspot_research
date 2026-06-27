@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenAI Codex 公众号热点 公众号热点报告</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #161a1d;
+      --muted: #667085;
+      --line: #d9dee3;
+      --paper: #f7f8f5;
+      --panel: #ffffff;
+      --green: #1f7a55;
+      --blue: #2b67c6;
+      --amber: #b7791f;
+      --red: #b42318;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    header {
+      padding: 40px 6vw 24px;
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    main { padding: 28px 6vw 56px; }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4vw, 52px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .sub { max-width: 980px; color: var(--muted); font-size: 15px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+      max-width: 980px;
+    }
+    .stat {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .stat strong { display: block; font-size: 28px; line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--blue);
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 280px;
+    }
+    .grade-s { border-top-color: var(--green); }
+    .grade-a { border-top-color: var(--blue); }
+    .grade-b { border-top-color: var(--amber); }
+    .grade-c { border-top-color: var(--red); }
+    .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .grade, .mini-grade {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      font-weight: 700;
+    }
+    .mini-grade { width: 26px; height: 26px; font-size: 12px; }
+    .score { font-size: 34px; font-weight: 760; }
+    h2 { margin: 0 0 10px; font-size: 20px; line-height: 1.28; letter-spacing: 0; }
+    a { color: inherit; text-decoration-color: rgba(43, 103, 198, .45); text-underline-offset: 3px; }
+    .meta, .excerpt, .reason { margin: 10px 0; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .excerpt { font-size: 14px; }
+    .reason {
+      border-left: 3px solid var(--line);
+      padding-left: 10px;
+      color: #344054;
+      font-size: 14px;
+    }
+    .bars { margin-top: 14px; display: grid; gap: 8px; }
+    .bar { display: grid; grid-template-columns: 48px 1fr 36px; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
+    .track { height: 8px; background: #eef1f4; border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; background: var(--blue); border-radius: 999px; }
+    section { margin-top: 34px; }
+    section h2 { font-size: 24px; }
+    .empty { background: #fff; border: 1px dashed var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; min-width: 720px; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: #f2f4f1; font-size: 13px; color: #475467; }
+    td:first-child { font-weight: 700; }
+    footer { color: var(--muted); font-size: 12px; padding: 0 6vw 32px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OpenAI Codex 公众号热点<br>公众号热点报告</h1>
+    <p class="sub">关键词：OpenAI Codex。生成时间：2026-06-27 18:05:27。报告只展示摘要和短摘录，不复制全文。</p>
+    <div class="stats">
+      <div class="stat"><strong>20</strong><span>抓取文章</span></div>
+      <div class="stat"><strong>11</strong><span>入选文章</span></div>
+      <div class="stat"><strong>0+</strong><span>展示阈值</span></div>
+      <div class="stat"><strong>接口</strong><span>运行模式</span></div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>入选文章</h2>
+      
+      <div class="grid">
+            <article class="card grade-s">
+              <div class="card-top">
+                <span class="grade">S</span>
+                <span class="score">100</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&amp;mid=2647683487&amp;idx=1&amp;sn=195063e8db911ac43256a80dcb556a2e&amp;chksm=562665#rd" target="_blank" rel="noopener noreferrer">从0到1带你速通WorkBuddy，这可能是最适合国内的Agent产品。</a></h2>
+              <p class="meta">数字生命卡兹克 · 2026-06-11 09:58:00 · 阅读 67252 · 点赞 2029 · 在看 918</p>
+              <p class="excerpt">之前我写了Claude Code和Codex的从0到1的新手教程，反响都还不错。但写完之后，评论区里一直有一类声音说，这些工具是好，但是用不了啊。确实，这两个产品虽然强，但它们对国内用户来说并不友好。而大家日常的办公需求又是实实在在的。然后，就有很多朋友问，能不能讲一讲，WorkBuddy的教程。坦率的讲，WorkBuddy确实也是我觉得国内为数不都的，口碑还不错的通用Agent产品了。所以这次，我也决定写一篇WorkBuddy的从0到</p>
+              <p class="reason">主题命中：Agent, OpenAI, Codex, Agent, Claude, Code；落地信号：案例, 流程, 步骤, 教程, 项目；技术实践信号：新版本, 发布, 升级, API, MCP；可复用资产信号：代码, 模板, 清单, 提示词, 配置</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:100%"></div></div><span>35/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:100%"></div></div><span>25/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:100%"></div></div><span>15/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-s">
+              <div class="card-top">
+                <span class="grade">S</span>
+                <span class="score">100</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&amp;mid=2247554929&amp;idx=1&amp;sn=32ffbc8759df694205d35ea46d9a7b5a&amp;chksm=340539#rd" target="_blank" rel="noopener noreferrer">Kimi 版 Codex 正式发布：股市分析给到夯！</a></h2>
+              <p class="meta">JavaGuide · 2026-06-10 14:57:02 · 阅读 58090 · 点赞 512 · 在看 263</p>
+              <p class="excerpt">你好，我是小 G。最近各家 AI 产品在往同一个方向走：读文件、操工具、最后交结果。Anthropic 的 Claude Cowork 和 OpenAI 的 Codex 做的都是这件事，切入角度不同，核心逻辑一致。Kimi 前几天也发布了国产版 Kimi Work，我体验了几天，真的很上头。它能读本地文件，通过 WebBridge 操作浏览器，支持定时任务，还有一个很炸裂的 Agent Swarm 功能：一个任务最多调度 300 个子 </p>
+              <p class="reason">主题命中：Codex, Code, OpenAI, Codex, Agent, Claude；落地信号：实战, 步骤, 项目, 踩坑, 经验；技术实践信号：最新, 发布, MCP, Agent, 智能体；可复用资产信号：代码, 清单, Prompt, 提示词, 开源</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:100%"></div></div><span>35/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:100%"></div></div><span>25/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:100%"></div></div><span>15/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-s">
+              <div class="card-top">
+                <span class="grade">S</span>
+                <span class="score">89</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzI1NDY5NDM3OQ==&amp;mid=2248109794&amp;idx=1&amp;sn=e7364828cb9e1b11afc2d914821212b3&amp;chksm=948375#rd" target="_blank" rel="noopener noreferrer">2026年职场Al水平的3个段位，你在哪一层?</a></h2>
+              <p class="meta">凤凰WEEKLY · 2026-06-09 09:00:00 · 阅读 76018 · 点赞 116 · 在看 40</p>
+              <p class="excerpt">作者/崔陆鹏 编辑/艾果在普通人的印象里，“程序员”是个神秘的存在。他们藏在各个大厂的格子间里，用看不懂的代码，推动时代滚滚向前。早在AI普及之前，职场圈就流传着“十倍程序员”、“百倍程序员”的说法。同样是编程，程序员之间的能力鸿沟实际上远超常人想象。顶尖的高手，往往能以一当十、甚至以一当百。当AI越来越聪明，十倍、百倍生产力的现象，开始冲出某个特定行业，向各个领域蔓延。你可能会发现，身边出现越来越多“超人”同事，领导布置所有人明天要交</p>
+              <p class="reason">主题命中：OpenAI, Codex, Agent, Claude, Code；落地信号：落地, 复盘, 流程, 项目, 搭建；技术实践信号：2026, 发布, 升级, Agent, 智能体；可复用资产信号：代码, 模板, 命令</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:83%"></div></div><span>29/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:100%"></div></div><span>25/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:73%"></div></div><span>11/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:80%"></div></div><span>4/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-s">
+              <div class="card-top">
+                <span class="grade">S</span>
+                <span class="score">89</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MTM2ODM0ODYyMQ==&amp;mid=2651750147&amp;idx=1&amp;sn=314bd11411bc15820e79f6fca01896c9&amp;chksm=202247#rd" target="_blank" rel="noopener noreferrer">乘客用智能眼镜偷拍空姐，平台还搜到大量偷拍视频，多方回应；李国庆自曝曾9次拒绝刘强东见面；瑞幸咖啡回应拿铁去冰仅半杯：可退款</a></h2>
+              <p class="meta">雷峰网 · 2026-06-08 08:28:24 · 阅读 62738 · 点赞 135 · 在看 21</p>
+              <p class="excerpt">要闻提示NEWS REMIND1.乘客用智能眼镜偷拍空姐，平台还能搜到大量偷拍视频，多方回应2.李国庆自曝曾9次拒绝刘强东见面，当当上市后京东图书价格战致其由盈转亏3.正式官宣！华为昇腾910C芯片成功完成1.6万亿DeepSeek全参数后训练，国产算力终于跨过最难一关4.传淘宝闪购加大零售业务投入：发展“淘宝便利店”、盒马前置仓等5.瑞幸咖啡回应拿铁去冰仅半杯：提供订单可退款6.暑期前入境游预订激增237%，飞猪上新“中国智造”定制研</p>
+              <p class="reason">主题命中：OpenAI, Codex, Agent, Claude, Code；落地信号：实践, 落地, 项目, 经验, 部署；技术实践信号：2026, 2025, 最新, 发布, 升级；可复用资产信号：代码, 提示词, 参数</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:83%"></div></div><span>29/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:100%"></div></div><span>25/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:73%"></div></div><span>11/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:80%"></div></div><span>4/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-s">
+              <div class="card-top">
+                <span class="grade">S</span>
+                <span class="score">88</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2651036685&amp;idx=1&amp;sn=313d005b89454ede2b68a079f097ec99&amp;chksm=984197#rd" target="_blank" rel="noopener noreferrer">一夜之间，ChatGPT与Codex合并了</a></h2>
+              <p class="meta">机器之心 · 2026-06-03 07:56:38 · 阅读 100001 · 点赞 631 · 在看 240</p>
+              <p class="excerpt">编辑｜Youli、杨文ChatGPT 与 Codex 终于要「合体」了。在昨天晚上进行的 OpenAI Intelligence at Work 直播活动上，OpenAI 宣布了一项重大决定：未来几周内，将 Codex 的核心能力直接整合进 ChatGPT 应用中。这意味着 OpenAI 可能不再希望用户把 ChatGPT 和 Codex 看成两个割裂产品，而是要让用户在 ChatGPT 这个高频入口里直接调用 Codex 的执行能力，</p>
+              <p class="reason">主题命中：Codex, Code, OpenAI, Codex, 桌面版, Agent；落地信号：落地, 复盘, 流程, 项目；技术实践信号：2026, 最新, 发布, Agent, workflow；可复用资产信号：代码, 配置</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:100%"></div></div><span>35/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:80%"></div></div><span>20/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:53%"></div></div><span>8/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-s">
+              <div class="card-top">
+                <span class="grade">S</span>
+                <span class="score">86</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&amp;mid=2652704759&amp;idx=1&amp;sn=9eda16b3a9364b4b837631767691a3aa&amp;chksm=756343#rd" target="_blank" rel="noopener noreferrer">今天，ChatGPT与Codex官宣合体！10亿人喜提「超级Agent」</a></h2>
+              <p class="meta">新智元 · 2026-06-03 06:00:00 · 阅读 100001 · 点赞 1145 · 在看 475</p>
+              <p class="excerpt">新智元报道 【新智元导读】OpenAI重磅Codex与ChatGPT，即将迎来史诗级合体！Codex三大更新：Agent插件、批注和Sites齐发，近10亿用户一夜解锁「全能分身」。OpenAI又把牌桌掀了！就在刚刚，一场Intelligence at Work线上发布会，OpenAI产品负责人登台重磅官宣——未来几周，我们要把Codex装进ChatGPT！传闻已久的ChatGPT「超级应用」，如今终于尘埃落定。ChatGPT+Code</p>
+              <p class="reason">主题命中：Codex, Agent, Code, OpenAI, Codex, 桌面版；落地信号：流程, 部署, 接入；技术实践信号：最新, 发布, 升级, Agent, workflow；可复用资产信号：代码, Prompt, 提示词</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:100%"></div></div><span>35/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:60%"></div></div><span>15/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:73%"></div></div><span>11/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-b">
+              <div class="card-top">
+                <span class="grade">B</span>
+                <span class="score">68</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzIyODY4Njg4OQ==&amp;mid=2247486234&amp;idx=1&amp;sn=76815e80094b640953b6437da80bd0c0&amp;chksm=435270#rd" target="_blank" rel="noopener noreferrer">程序员最焦虑的两件事：功能没写完，token 用完了；功能写完了，token 还剩大半马上要重置了......</a></h2>
+              <p class="meta">半夏决明 · 2026-06-09 22:04:22 · 阅读 88181 · 点赞 120 · 在看 50</p>
+              <p class="excerpt">资本主义有个很出圈的说法：需求是可以被创造的。就是说生产活动，不是先有需求，再有生产这么直白的。在一定程度上，生产活动能够创造并引导人们实际上不需要的需求。其实延展开来，什么又不是呢？上学的时候，成绩焦虑。街上四散零落的大娘大爷看我手里拿着奖状，问我为啥不高兴。我说考了第五名，第五名了还不高兴，因为我以前都是前两名。大学毕业的时候，就业焦虑。别人要不考公了，要不考研了，我编程一条路走到黑，我完全不知道能不能靠这个找到工作。最近被B站安排</p>
+              <p class="reason">主题命中：OpenAI, Codex, CLI, Agent, AI编程, Claude；落地信号：经验；技术实践信号：最新, 升级, API, Agent, 插件；可复用资产信号：代码</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:100%"></div></div><span>35/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:20%"></div></div><span>5/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:100%"></div></div><span>20/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:27%"></div></div><span>4/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:80%"></div></div><span>4/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-b">
+              <div class="card-top">
+                <span class="grade">B</span>
+                <span class="score">65</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&amp;mid=2247536768&amp;idx=1&amp;sn=aa1eb8479bca40d769eee69bf4a71249&amp;chksm=796881#rd" target="_blank" rel="noopener noreferrer">字节跳动的 AI 账本：豆包每天不足百万收入、Seedance 毛利 70%</a></h2>
+              <p class="meta">晚点LatePost · 2026-06-16 18:31:25 · 阅读 73287 · 点赞 832 · 在看 394</p>
+              <p class="excerpt">怎么在一个被免费喂大的市场，让人重新为服务付费？文丨高洪浩 陈佳惠编辑丨黄俊杰截至上半年，每天 2 亿多人使用的豆包应用每天收入不足百万元，主要来自电商佣金。而到今年 5 月，豆包应用每天消耗数千万元——参照火山引擎公开 API 价格，结合豆包大模型的毛利率、豆包用户使用习惯推算。文字聊天不贵，按每天人均 15-20 分钟的使用时长，只要几分钱，但推理，以及图片识别、语音聊天、视频聊天等多模态功能需要的算力成本要贵几倍甚至几十倍。这还没</p>
+              <p class="reason">主题命中：OpenAI, Codex, Claude, Code；落地信号：接入, 搭建；技术实践信号：2026, 2025, API, 上下文；可复用资产信号：提示词, 开源, 参数</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:66%"></div></div><span>23/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:40%"></div></div><span>10/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:80%"></div></div><span>16/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:73%"></div></div><span>11/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-c">
+              <div class="card-top">
+                <span class="grade">C</span>
+                <span class="score">59</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&amp;mid=2651784277&amp;idx=1&amp;sn=9454268c60e0e73ff94e6184edbbb2a1&amp;chksm=758063#rd" target="_blank" rel="noopener noreferrer">史上第一个年入1万亿美元的公司，可能是它</a></h2>
+              <p class="meta">刘润 · 2026-05-30 11:18:00 · 阅读 100001 · 点赞 1578 · 在看 650</p>
+              <p class="excerpt">5月29日，Anthropic完成一轮650亿美元的融资，估值9650亿美元，首次超过Open AI。同时，公司年化收入突破470亿美元。470亿美元。什么概念？2025财年，可口可乐的全年营收，大约479亿美元。而这家成立不到6年的AI公司，单看收入规模，已经追平了全球饮料巨头。这还没完。要知道，从去年年底到现在，Anthropic 的年化营收，足足翻了四倍。所以，它今天的收入，可能还只是开始。我在今年的年中大课上，还大胆地做了个猜测</p>
+              <p class="reason">主题命中：OpenAI, Codex, Claude, Code；落地信号：流程, 步骤, 项目；技术实践信号：2025, API, 智能体；可复用资产信号：代码</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:66%"></div></div><span>23/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:60%"></div></div><span>15/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:60%"></div></div><span>12/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:27%"></div></div><span>4/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-c">
+              <div class="card-top">
+                <span class="grade">C</span>
+                <span class="score">58</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MjM5ODUxMjExMA==&amp;mid=2650612684&amp;idx=1&amp;sn=2a347d1b013315f1b9c9e2ba26a3942c&amp;chksm=864383#rd" target="_blank" rel="noopener noreferrer">【财经早餐】2026.06.23星期二</a></h2>
+              <p class="meta">财经早餐 · 2026-06-23 06:25:27 · 阅读 87528 · 点赞 949 · 在看 321</p>
+              <p class="excerpt">每日金曲：李荣浩 - 脱胎换骨► 国家能源集团：今年夏季全国平均气温较常年偏高，高温日数较常年偏多。各环节全面发力，将坚决扛起迎峰度夏保供重任。煤炭保供是电力稳发底线支撑。煤炭板块全速稳产增产、统筹内外资源、抓实设备运维，锚定高产稳供目标筑牢能源保供根基，全力护航区域电力负荷高峰需求。► 央视新闻：美国财政部发布一般许可证，授权至8月21日期间，允许涉及伊朗原产原油、石化产品及石油产品的生产、运输与销售。该一般许可证涵盖允许进口伊朗原产</p>
+              <p class="reason">主题命中：OpenAI, Codex, Claude, Code；落地信号：项目, 部署；技术实践信号：2026, 2025, 发布, 升级；可复用资产信号：配置</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:66%"></div></div><span>23/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:40%"></div></div><span>10/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:80%"></div></div><span>16/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:27%"></div></div><span>4/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            
+            <article class="card grade-c">
+              <div class="card-top">
+                <span class="grade">C</span>
+                <span class="score">32</span>
+              </div>
+              <h2><a href="https://mp.weixin.qq.com/s?__biz=MzIxNzYxMTU0OQ==&amp;mid=2247503927&amp;idx=1&amp;sn=a9476827f7f3fcd2f433acf226f89036&amp;chksm=927247#rd" target="_blank" rel="noopener noreferrer">改变我命运的20秒...</a></h2>
+              <p class="meta">刘备教授 · 2026-05-31 13:59:38 · 阅读 100001 · 点赞 1455 · 在看 187</p>
+              <p class="excerpt">和你们分享一件往事。刚进大学时，我因为不太适应八个男人睡一间，失眠严重，整个大一都处于降智状态；母校的学业竞争很激烈，我就算满血也只是个中等水平，降智后就只能力保及格。大一上期末考试有一门课正中我的软肋，大部分题目都是看起来懂一些，但真做起来又很辛苦，感觉相当之不好。收卷的时候，我瞥了一眼前排同学的答卷，看清楚了4-5道题，和我他喵的都不一样。因为都是选择和填空题，20秒就足够改过来。我知道这哥们学得可能比我好，但因为是进大学后第一次期</p>
+              <p class="reason">主题命中：OpenAI, Codex, Claude, Code；技术实践信号：2025；热度信号：阅读 100001 / 点赞 1455 / 在看 187</p>
+              <div class="bars">
+                <div class="bar"><span>主题</span><div class="track"><div class="fill" style="width:66%"></div></div><span>23/35</span></div>
+                <div class="bar"><span>落地</span><div class="track"><div class="fill" style="width:0%"></div></div><span>0/25</span></div>
+                <div class="bar"><span>技术</span><div class="track"><div class="fill" style="width:20%"></div></div><span>4/20</span></div>
+                <div class="bar"><span>资产</span><div class="track"><div class="fill" style="width:0%"></div></div><span>0/15</span></div>
+                <div class="bar"><span>热度</span><div class="track"><div class="fill" style="width:100%"></div></div><span>5/5</span></div>
+              </div>
+            </article>
+            </div>
+    </section>
+    <section>
+      <h2>全量评分表</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>分数</th><th>等级</th><th>标题</th><th>公众号</th><th>日期</th><th>排除</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>100</td>
+              <td><span class="mini-grade">S</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&amp;mid=2647683487&amp;idx=1&amp;sn=195063e8db911ac43256a80dcb556a2e&amp;chksm=562665#rd" target="_blank" rel="noopener noreferrer">从0到1带你速通WorkBuddy，这可能是最适合国内的Agent产品。</a></td>
+              <td>数字生命卡兹克</td>
+              <td>2026-06-11 09:58:00</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>100</td>
+              <td><span class="mini-grade">S</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&amp;mid=2247554929&amp;idx=1&amp;sn=32ffbc8759df694205d35ea46d9a7b5a&amp;chksm=340539#rd" target="_blank" rel="noopener noreferrer">Kimi 版 Codex 正式发布：股市分析给到夯！</a></td>
+              <td>JavaGuide</td>
+              <td>2026-06-10 14:57:02</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>89</td>
+              <td><span class="mini-grade">S</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzI1NDY5NDM3OQ==&amp;mid=2248109794&amp;idx=1&amp;sn=e7364828cb9e1b11afc2d914821212b3&amp;chksm=948375#rd" target="_blank" rel="noopener noreferrer">2026年职场Al水平的3个段位，你在哪一层?</a></td>
+              <td>凤凰WEEKLY</td>
+              <td>2026-06-09 09:00:00</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>89</td>
+              <td><span class="mini-grade">S</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MTM2ODM0ODYyMQ==&amp;mid=2651750147&amp;idx=1&amp;sn=314bd11411bc15820e79f6fca01896c9&amp;chksm=202247#rd" target="_blank" rel="noopener noreferrer">乘客用智能眼镜偷拍空姐，平台还搜到大量偷拍视频，多方回应；李国庆自曝曾9次拒绝刘强东见面；瑞幸咖啡回应拿铁去冰仅半杯：可退款</a></td>
+              <td>雷峰网</td>
+              <td>2026-06-08 08:28:24</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>88</td>
+              <td><span class="mini-grade">S</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2651036685&amp;idx=1&amp;sn=313d005b89454ede2b68a079f097ec99&amp;chksm=984197#rd" target="_blank" rel="noopener noreferrer">一夜之间，ChatGPT与Codex合并了</a></td>
+              <td>机器之心</td>
+              <td>2026-06-03 07:56:38</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>86</td>
+              <td><span class="mini-grade">S</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&amp;mid=2652704759&amp;idx=1&amp;sn=9eda16b3a9364b4b837631767691a3aa&amp;chksm=756343#rd" target="_blank" rel="noopener noreferrer">今天，ChatGPT与Codex官宣合体！10亿人喜提「超级Agent」</a></td>
+              <td>新智元</td>
+              <td>2026-06-03 06:00:00</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>70</td>
+              <td><span class="mini-grade">B</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&amp;mid=2247536554&amp;idx=1&amp;sn=36b2374171f6956d616079ca95c5591a&amp;chksm=503991#rd" target="_blank" rel="noopener noreferrer">与钉钉新 CEO 陈宇森的两次访谈：未来的软件和 Agent 推演</a></td>
+              <td>晚点LatePost</td>
+              <td>2026-06-11 10:52:59</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>68</td>
+              <td><span class="mini-grade">B</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzIyODY4Njg4OQ==&amp;mid=2247486234&amp;idx=1&amp;sn=76815e80094b640953b6437da80bd0c0&amp;chksm=435270#rd" target="_blank" rel="noopener noreferrer">程序员最焦虑的两件事：功能没写完，token 用完了；功能写完了，token 还剩大半马上要重置了......</a></td>
+              <td>半夏决明</td>
+              <td>2026-06-09 22:04:22</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>65</td>
+              <td><span class="mini-grade">B</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&amp;mid=2247536768&amp;idx=1&amp;sn=aa1eb8479bca40d769eee69bf4a71249&amp;chksm=796881#rd" target="_blank" rel="noopener noreferrer">字节跳动的 AI 账本：豆包每天不足百万收入、Seedance 毛利 70%</a></td>
+              <td>晚点LatePost</td>
+              <td>2026-06-16 18:31:25</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>63</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&amp;mid=2248890307&amp;idx=1&amp;sn=f4b2c0b2486174049e4a989b15a66c3d&amp;chksm=264187#rd" target="_blank" rel="noopener noreferrer">8点1氪：豆包将在6月下旬正式付费 ；韩国SK海力士工厂发生火灾；宇树科技IPO过会，王兴兴身家或超140亿</a></td>
+              <td>36氪</td>
+              <td>2026-06-02 08:03:55</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>59</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&amp;mid=2651784277&amp;idx=1&amp;sn=9454268c60e0e73ff94e6184edbbb2a1&amp;chksm=758063#rd" target="_blank" rel="noopener noreferrer">史上第一个年入1万亿美元的公司，可能是它</a></td>
+              <td>刘润</td>
+              <td>2026-05-30 11:18:00</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>58</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MjM5ODUxMjExMA==&amp;mid=2650612684&amp;idx=1&amp;sn=2a347d1b013315f1b9c9e2ba26a3942c&amp;chksm=864383#rd" target="_blank" rel="noopener noreferrer">【财经早餐】2026.06.23星期二</a></td>
+              <td>财经早餐</td>
+              <td>2026-06-23 06:25:27</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>57</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MjM5OTYzMzAxMg==&amp;mid=2650249276&amp;idx=1&amp;sn=b7fd9f4983d7fae269afc8970f630a22&amp;chksm=368255#rd" target="_blank" rel="noopener noreferrer">6万字，事关2026下半场</a></td>
+              <td>中信证券</td>
+              <td>2026-05-31 23:52:42</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>49</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&amp;mid=2650878032&amp;idx=1&amp;sn=5eeb53c2b30b160fe75cfc373c0b2452&amp;chksm=311770#rd" target="_blank" rel="noopener noreferrer">阿里员工离职前内网发7万字长文；乘客用智能眼镜偷拍空姐，多方回应；精品咖啡Seesaw被申请破产清算；多平台下架“娜塔莎”丨邦早报</a></td>
+              <td>创业邦</td>
+              <td>2026-06-08 08:02:34</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>46</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MTg1MjI3MzY2MQ==&amp;mid=2652363721&amp;idx=1&amp;sn=b080385e3b970d9425bdf15c54ee6b45&amp;chksm=777719#rd" target="_blank" rel="noopener noreferrer">鹅腿阿姨被官方通报；乌克兰AI无人机可能已经自主杀人；中国科学家发现最大深海鲸类坟场</a></td>
+              <td>果壳</td>
+              <td>2026-06-11 18:04:42</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>39</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzYyMTU4OTg5Mg==&amp;mid=2247660959&amp;idx=1&amp;sn=49366b6275afce8be4c41afa4663d2f4&amp;chksm=676886#rd" target="_blank" rel="noopener noreferrer">支付宝和微信这一步，将是AI的“扫码时刻”</a></td>
+              <td>智谷趋势Trend</td>
+              <td>2026-06-17 18:00:00</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>35</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&amp;mid=2248892878&amp;idx=1&amp;sn=b5b867f92c78a668b5483774a065e396&amp;chksm=253814#rd" target="_blank" rel="noopener noreferrer">8点1氪：SpaceX跌破IPO首日收盘价，市值蒸发4000亿美元；英国首相斯塔默宣布辞职；SK海力士市值首超三星电子</a></td>
+              <td>36氪</td>
+              <td>2026-06-23 08:01:08</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>32</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzIxNzYxMTU0OQ==&amp;mid=2247503927&amp;idx=1&amp;sn=a9476827f7f3fcd2f433acf226f89036&amp;chksm=927247#rd" target="_blank" rel="noopener noreferrer">改变我命运的20秒...</a></td>
+              <td>刘备教授</td>
+              <td>2026-05-31 13:59:38</td>
+              <td>否</td>
+            </tr>
+            
+            <tr>
+              <td>31</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&amp;mid=2248890115&amp;idx=1&amp;sn=f7c819116e7b890ca619211f73356701&amp;chksm=293236#rd" target="_blank" rel="noopener noreferrer">「Token」必须死？</a></td>
+              <td>36氪</td>
+              <td>2026-05-30 17:00:00</td>
+              <td>是</td>
+            </tr>
+            
+            <tr>
+              <td>10</td>
+              <td><span class="mini-grade">C</span></td>
+              <td><a href="https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2651038535&amp;idx=1&amp;sn=f011c109258b8e1287cc236586c52f49&amp;chksm=885766#rd" target="_blank" rel="noopener noreferrer">刚刚，Anthropic道歉了</a></td>
+              <td>机器之心</td>
+              <td>2026-06-11 14:49:12</td>
+              <td>是</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>由公众号热点研究 Skill 生成。API Key 不会写入输出文件。</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "topic": "Codex",
+  "platform": "both",
+  "keywords": ["Codex", "OpenAI Codex", "Claude Code"],
+  "topic_keywords": ["Codex", "OpenAI", "Claude Code", "AI编程", "Agent", "工作流"],
+  "article_limit": 10,
+  "video_limit": 5,
+  "output_dir": "./output",
+  "download_video": true
+}
