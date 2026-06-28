@@ -67,55 +67,31 @@ PowerShell 用户级长期配置：
 [Environment]::SetEnvironmentVariable("DAJIALA_VERIFYCODE", "your_verifycode", "User")
 ```
 
-## 快速开始
+## 在 Codex 中使用
 
-使用 Codex 内置主题：
+安装并重启 Codex 后，直接在 Codex 对话里说你要抓什么主题、抓哪些平台、保存到哪里即可。
 
-```bash
-python scripts/hotspot_research.py \
-  --profile codex \
-  --platform both \
-  --output-dir ./output
+最简单的说法：
+
+```text
+使用 $video-hotspot-research 抓取 Codex 相关的公众号文章和视频号内容，生成热点报告，保存到 ./output
 ```
 
-使用自定义主题：
+Codex 会自动完成：
 
-```bash
-python scripts/hotspot_research.py \
-  --topic "AI Agent" \
-  --platform both \
-  --keywords "AI Agent,智能体,自动化工作流" \
-  --output-dir ./output
-```
+- 检查大加拉 API Key
+- 选择关键词和平台
+- 抓取微信公众号文章和视频号内容
+- 对内容评分、过滤广告和低相关内容
+- 下载视频号本地 MP4
+- 生成 `report.html`、`report.md`、`selected_items.json` 等文件
+- 如果数量不足，生成 `diagnosis.md` 说明原因
 
 默认会抓取：
 
 - 10 条微信公众号文章
 - 5 条微信视频号内容
 - 视频会默认下载为本地 MP4，保证 HTML 报告可播放
-
-修改数量：
-
-```bash
-python scripts/hotspot_research.py \
-  --topic "AI 编程" \
-  --platform both \
-  --keywords "AI 编程,Codex,Claude Code" \
-  --article-limit 20 \
-  --video-limit 10 \
-  --output-dir ./output
-```
-
-只生成视频号元数据，不下载视频：
-
-```bash
-python scripts/hotspot_research.py \
-  --topic "AI 视频生成" \
-  --platform video \
-  --keywords "AI 视频生成,AIGC 视频" \
-  --no-download-video \
-  --output-dir ./output
-```
 
 ## 输出结构
 
@@ -153,17 +129,61 @@ output-dir/
 
 视频号示例不包含 MP4 文件。真实运行并启用视频下载时，会生成 `assets/video-*.mp4`。
 
-## Skill 基础使用说明
+## 使用案例
 
-在 Codex 中安装并重启后，可以直接这样使用：
+下面这些都可以直接复制到 Codex 中使用。
+
+### 案例 1：抓取 Codex 热点
 
 ```text
-使用 $video-hotspot-research 抓取 Codex 相关的公众号文章和视频号内容，输出到 ./output
+使用 $video-hotspot-research 抓取 Codex、OpenAI Codex、Claude Code 相关的微信公众号文章和视频号内容，生成热点报告，保存到 ./output
 ```
 
-Codex 会根据 `SKILL.md` 的流程检查 API Key、选择脚本参数、运行抓取、检查报告产物，并在结果不足时查看 `diagnosis.md`。
+适合观察 Codex、OpenAI Codex、Claude Code、AI 编程工具等内容趋势。
 
-你也可以直接运行脚本，适合自动化任务或批处理：
+### 案例 2：抓取 AI Agent 选题
+
+```text
+使用 $video-hotspot-research 抓取 AI Agent、智能体、自动化工作流、MCP、工具调用相关的公众号文章和视频号内容。公众号抓取 20 条，视频号抓取 10 条，生成热点报告，保存到 ./output
+```
+
+适合课程学员、内容团队做智能体、自动化工作流、MCP、工具调用等方向的选题库。
+
+### 案例 3：只抓公众号文章
+
+```text
+使用 $video-hotspot-research 只抓微信公众号文章，主题是 AI 编程，关键词包括 AI 编程、Codex、Claude Code、Cursor，抓取 20 条，生成热点报告，保存到 ./output
+```
+
+适合做公众号文章选题、竞品标题分析、长文素材库。
+
+### 案例 4：只抓视频号并下载本地 MP4
+
+```text
+使用 $video-hotspot-research 只抓视频号内容，主题是 AI 视频生成，关键词包括 AI 视频生成、AIGC 视频、可灵、Runway、Sora，抓取 8 条，下载本地 MP4，生成 HTML 热点报告，保存到 ./output
+```
+
+适合做视频号选题监控。报告会引用本地 MP4，方便直接预览。
+
+### 案例 5：只保留视频号元数据，不下载视频
+
+```text
+使用 $video-hotspot-research 只抓视频号元数据，主题是提示词工程，关键词包括提示词工程、Prompt、AI 工作流，抓取 10 条，不下载视频，只生成选题分析报告，保存到 ./output
+```
+
+适合只做标题、账号、互动数据和选题角度分析，不保存视频文件。
+
+### 案例 6：保存到指定素材库
+
+```text
+使用 $video-hotspot-research 抓取 AI 产品相关的微信公众号文章和视频号内容，生成热点报告，保存到 D:\workplace\01.workplace\super_person\超级个体\02-素材库\热点报告
+```
+
+适合已经有固定素材库目录的用户。
+
+## 开发者与自动化用法（可选）
+
+非技术用户可以忽略本节。如果你要做定时任务或批处理，可以直接运行脚本：
 
 ```bash
 python scripts/hotspot_research.py \
@@ -174,70 +194,6 @@ python scripts/hotspot_research.py \
   --video-limit 5 \
   --output-dir ./output
 ```
-
-### 案例 1：抓取 Codex 热点
-
-```bash
-python scripts/hotspot_research.py \
-  --profile codex \
-  --platform both \
-  --output-dir ./output
-```
-
-适合观察 Codex、OpenAI Codex、Claude Code、AI 编程工具等内容趋势。
-
-### 案例 2：抓取 AI Agent 选题
-
-```bash
-python scripts/hotspot_research.py \
-  --profile ai-agent \
-  --platform both \
-  --article-limit 20 \
-  --video-limit 10 \
-  --output-dir ./output
-```
-
-适合课程学员、内容团队做智能体、自动化工作流、MCP、工具调用等方向的选题库。
-
-### 案例 3：只抓公众号文章
-
-```bash
-python scripts/hotspot_research.py \
-  --topic "AI 编程" \
-  --platform article \
-  --keywords "AI 编程,Codex,Claude Code,Cursor" \
-  --article-limit 20 \
-  --output-dir ./output
-```
-
-适合做公众号文章选题、竞品标题分析、长文素材库。
-
-### 案例 4：只抓视频号并下载本地 MP4
-
-```bash
-python scripts/hotspot_research.py \
-  --topic "AI 视频生成" \
-  --platform video \
-  --keywords "AI 视频生成,AIGC 视频,可灵,Runway,Sora" \
-  --video-limit 8 \
-  --output-dir ./output
-```
-
-适合做视频号选题监控。脚本会调用详情/下载接口，把可播放视频保存到 `assets/video-*.mp4`，HTML 报告引用本地 MP4。
-
-### 案例 5：只保留视频号元数据，不下载视频
-
-```bash
-python scripts/hotspot_research.py \
-  --topic "提示词工程" \
-  --platform video \
-  --keywords "提示词工程,Prompt,AI工作流" \
-  --video-limit 10 \
-  --no-download-video \
-  --output-dir ./output
-```
-
-适合只做标题、账号、互动数据和选题角度分析，不保存视频文件。
 
 ## 内置主题
 
